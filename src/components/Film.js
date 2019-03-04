@@ -16,8 +16,7 @@ class Film extends Component {
         return (
            <div className = "film">
            <h3>{this.props.name}</h3>
-           <button onClick =  {this.handleClick}
-           >IMDB Link</button>
+           <button onClick =  {this.handleClick}>IMDB Link</button>
            </div>
 
         )

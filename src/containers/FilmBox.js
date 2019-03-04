@@ -33,6 +33,11 @@ class FilmBox extends Component {
             }
           ]
         }
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(){
+      window.location.href = "https://www.imdb.com/calendar/?region=gb"
     }
 
 
@@ -41,7 +46,7 @@ class FilmBox extends Component {
             <div className = "film-box">
             <h2>Current and Upcoming Releases</h2>
             <FilmList data = {this.state.data}/>
-            {/* <button onClick = {"https://www.imdb.com/calendar/?region=gb"}>Upcoming Films</button> */}
+            <button onClick = {this.handleClick}>Upcoming Films</button>
             </div>
         )
     }
