@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import FilmList from "../components/FilmList"
 
+
 class FilmBox extends Component {
     constructor(props){
         super(props);
@@ -38,8 +39,9 @@ class FilmBox extends Component {
     render(){
         return(
             <div className = "film-box">
-            <h2>Films</h2>
+            <h2>Current and Upcoming Releases</h2>
             <FilmList data = {this.state.data}/>
+            {/* <button onClick = {"https://www.imdb.com/calendar/?region=gb"}>Upcoming Films</button> */}
             </div>
         )
     }
